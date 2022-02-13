@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap");
+
+*{
+    margin: 0;
+    line-height: 1.5;
+}
+
+body{
+    color: aliceblue;
+}
+
+h1,.explor{
+    font-family: 'Bellefair';
+    font-weight: 100;
+    }
+p{
+    
+    font-family: 'Barlow';
+    color: grey;
+}
+h2,h3,h4{
+    font-family: 'barlow condensed';
+    font-weight: 100;
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.596);
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.Home-body{
+    background-image: url("assets/home/background-home-desktop.jpg");
+    position: relative;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.explor{
+    font-size: 3rem;
+    position: absolute;
+    right: 10rem;
+    bottom: 10rem;
+    padding-top: 60px;
+    padding-right: 40px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+    background-color: aliceblue;
+    border-radius: 100%;
+    color: #000;
+}
+
+.explor:hover{
+    padding: 6rem 4rem 6rem 4rem;
+    background-color: rgba(244, 248, 248, 0.712);
+}
+
+/* Nav bar */
+
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 2.5rem 0rem 2rem ;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    padding-right: 6rem;
+    position: absolute;
+}
+li{
+    padding: 1.5rem 1.5rem;
+    z-index: 2;
+}
+
+li:hover{
+    border-bottom: 3px solid gray;
+}
+
+.icon{
+    position: absolute;
+    left: 2rem;
+}
+
+.blur{
+    height: 4.5rem;
+    width: 50vw;
+    backdrop-filter: blur(20px);
+    background-color: rgba(240, 245, 250, 0.05);
+    z-index: 1;
+    border-radius: 0.5rem;
+    padding: 5px;
+}
+
+
+/* Content section */
+
+.detail{
+    
+    flex-direction: row;
+    margin: 5% 8% 5%;
+    line-height: 1.4;
+}
+
+.left{
+    width: 30vw;
+}
+
+.big-heading{
+    font-size: 4.5rem;
+    font-weight: 100;
+}
+.perra{
+    width: 25rem;
+}
+/* Home page Responsiv */
+
+@media screen and (max-width:800px){
+    .Home-body{
+        background-image: url(assets/home/background-home-tablet.jpg);
+    }
+
+    .navbar{
+        margin: 0;
+
+    }
+    ul{
+        padding: 0.5rem 2rem;
+    }
+
+    .blur{
+        height: 5.5rem;
+        width: 60vw;
+    }
+    em{
+        display: none;
+    }
+
+    .detail{
+        flex-direction: column;
+        
+    }
+
+}
+
+/* Destination section */
+
+/* Mars destination */
+.des-body{
+    background-image: url(assets/destination/background-destination-desktop.jpg);
+}
+
+.des-detail,.crew-detail,.tech-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.des-container,.crew-detail{
+    width: 50vw;
+    padding: 2rem;
+}
+
+.head-des,.crew-head{
+    margin: 3rem 3rem 1.5rem 6rem;
+}
+
+.des-image{
+    padding: 1rem 4rem 4rem 10rem;
+}
+
+.des-nav{
+    position: absolute;
+    top: 14rem;
+}
+
+.des-heading{
+    padding: 5rem 2rem 0 3.6rem;
+    font-size: 3rem;
+}
+
+.des-info{
+    width: 30vw;
+    padding: 1rem 3rem;
+
+}
+
+hr{
+    width: 27rem;
+    margin-left: 2rem;
+}
+
+.des-fact{
+    display: flex;
+    flex-direction: row;
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+
+.des-fact h3{
+    font-size: 2rem;
+}
+.fact1{
+    margin-right: 10rem;
+}
+
+
+/* Moon  */
+
+
+/* Europa */
+
+/* crew stylesheet */
+.crew-body{
+    background-image: url("assets/crew/background-crew-desktop.jpg");
+}
+
+.crew-image{
+    padding-top: 2.4rem;
+    padding-bottom: 0;
+}
+
+.crew-detail{
+    padding-bottom: 0;
+}
+
+.crew-title{
+    padding: 3rem 0 1rem 4rem;
+    font-size: 2rem;
+}
+
+.crew-name{
+    padding: 0.5rem 0 0rem 4rem;
+    font-size: 1.8rem;
+}
+
+.crew-info{
+    padding-right: 10rem;
+}
+.crew-bio{
+    width: 30vw;
+    padding-left: 4rem;
+    
+}
+.dot a{
+    font-size: 10rem;
+    text-decoration: none;
+    color: grey;
+}
+.dot li{
+    margin: 0rem 0.5rem;
+}
+
+.victor , .douglas, .ansari,.mark{
+    height: 550px;
+}
+
+.markh{
+    font-size: 1.5rem;
+}
+/* Technology */
+
+.tech-body{
+    background-image: url("assets/technology/background-technology-desktop.jpg");
+}
+
+.btn1,.btn2,.btn3{
+    height: 2rem;
+    width: 2rem;
+    padding: 2rem;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 100%;
+    text-align: center;
+    margin: 1rem;
+    color: azure;
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
+.btn1:hover,.btn2:hover,.btn3:hover{
+    background-color: azure;
+    color: black;
+}
+
+.tech-info{
+    width: 35vw;
+    padding: 4rem 4rem 0 1rem;
+    margin-right: 2rem;
+}
+.num-btn{
+    padding: 3rem 3rem 0 7rem;
+}
+
+.tech-container{
+    padding: 4rem 0 5rem;
+}
+.tech-vicle{
+    font-size: 2rem;
+}
+
+/* Key frame and Animatyion */
+@keyframes planetRotation {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.des-image img{
+    animation:planetRotation 30s linear infinite ;
+}
+
+/* Java script */
+
+.bottom-line{
+    border-bottom: 4px solid rgb(255, 255, 255);
+}
